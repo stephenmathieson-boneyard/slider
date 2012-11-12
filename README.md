@@ -64,5 +64,6 @@ Move forward one image
 
 ### Stats
 
-- Uncompressed size: _7925_ bytes
-- Compressed size: _985_ bytes gzipped (_2439_ bytes minified)
+- **7925** bytes uncompressed
+- **2439** bytes minified
+- **985** ( *under 1kb!* ) bytes gzipped and minified
