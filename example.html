@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf8" />
+		<title>Example CSS Transition Slider</title>
+
+
+		<style>
+
+		.slider {
+			width: 960px;
+			height: 408px;
+			overflow: hidden;
+			position: relative;
+			margin: 0 auto;
+		}
+			.slider ul {
+				list-style: none;
+			}
+				.slider li {
+				}
+					.slider img {
+						width: 100%;
+						height: auto;
+						position: absolute;
+						left: 0;
+						top: 0;
+						opacity: 0;
+					}
+						.slider img.active {
+						}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="slider" role="presentation">
+
+			<ul>
+
+				<li>
+					<img src="http://wodumedia.com/wp-content/uploads/2012/10/PAUL-DANO-as-Alexander-in-Warner-Bros.-Pictures-Legendary-Pictures-and-Village-Roadshow-Pictures-adventure-film-Where-the-Wild-Things-Are-a-Warner-Bros.-Pictures-release.-Photo-by-Matt-Nettheim-16-960x408.jpg" alt="a goat by a tree" />
+				</li>
+
+				<li>
+					<img src="http://4.bp.blogspot.com/-7Ksf98VaHCg/UD6VkXTLpHI/AAAAAAAACS8/TtuFS1N3v9g/s1600/Modern_Home_Office_Accessories_by_Blu_Dot.jpg" alt="some sticks" />
+				</li>
+
+				<li>
+					<img src="http://www.imcdb.org/i534908.jpg" alt="jurassic park or something" />
+				</li>
+
+				<li>
+					<img src="http://www.theanandita.com/wp-content/themes/anandita/images/headers/events-header_opt.jpg" alt="cocktails this way" />
+				</li>
+
+				<li>
+					<img src="http://designythings.files.wordpress.com/2011/07/modern_rugs_catpage_blu_dot.jpg" alt="carpet in the sky" />
+				</li>
+
+			</ul>
+
+		</div>
+
+		<span>all photos &copy; their respective owners</span>
+
+		<script src="/dist/slider.js"></script>
+		<script>
+			var s,
+				element = document.getElementsByClassName('slider')[0],
+				images = element.getElementsByTagName('img'),
+				options = {
+					activeClass: 'active',
+					duration: 3000
+				};
+
+			s = slider(element, images, options).play();
+
+			console.log(s);
+		</script>
+
+	</body>
+
+</html>
